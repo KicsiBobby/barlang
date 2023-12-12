@@ -26,7 +26,33 @@ body{
 }
 
 </style>
-<body>
+
+<script>
+    function start(){
+        let tomb=[];
+        let html1="";
+        let html3="";
+        for (let i=0; i<6; i++){
+            let randomszam=Math.floor(Math.random()*8)+1;
+            tomb.push();
+        }
+        for (let a of tomb){
+            html1+="<img src='icon"+a+"n.png'>";
+        }
+        document.getElementById("box1").innerHTML=html1;
+
+        for (let i=1; i<9; i++){
+            html3+="<img src='icon"+i+"k.png' onclick='katt("+i+")'>";
+        }
+        document.getElementById("box3").innerHTML=html3;
+    }
+    html2="";
+    function katt(){
+        html2+="<img src='icon"+i+"n.png'>";
+        document.getElementById("box2").innerHTML
+    }
+</script>
+<body onload="start();">
     <div id="main">
         <div class="box" id="box1">
 
@@ -35,7 +61,7 @@ body{
 
         </div>
         <div class="box" id="box3">
-
+            
         </div>
     </div>
 </body>
